@@ -4,7 +4,7 @@ import Image from 'next/image'
 import AppNav from '@/components/AppNav';
 
 
-const index = () => {
+const Home = () => {
 
   const testimonials = [
     {
@@ -398,4 +398,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home;

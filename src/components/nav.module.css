@@ -252,6 +252,7 @@ line-height: 69.84px;
   }
 
   .innerboxheader{
+    width: 100%;
     font-weight: 700;
     font-size: 30px;
     line-height: 52.38px;

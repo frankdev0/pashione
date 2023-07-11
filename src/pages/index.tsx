@@ -39,9 +39,9 @@ const index = () => {
     }, 
   ]
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = React.useState<number>(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) =>
         prevSlide === testimonials.length - 1 ? 0 : prevSlide + 1
@@ -49,7 +49,7 @@ const index = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [testimonials.length]);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -97,7 +97,7 @@ const index = () => {
     
   ];
 
-  const [activeIndex, setActiveIndex] = useState(-1);
+  const [activeIndex, setActiveIndex] = React.useState<number>(-1);
 
     const toggleAccordion = (index: number) => {
       if (activeIndex === index) {
@@ -275,7 +275,7 @@ const index = () => {
             <div>
           <p className={styles.text}>{testimonial.text}</p>
           <div className={styles.content}>
-          <img className={styles.image} src={testimonial.image} alt="Testimonial" />
+          <Image className={styles.image} width={30} height={30} src={testimonial.image} alt="Testimonial" />
             <p className={styles.name}>{testimonial.name}</p>
           </div>
           </div>

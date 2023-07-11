@@ -39,9 +39,9 @@ const index = () => {
     }, 
   ]
 
-  const [currentSlide, setCurrentSlide] = React.useState<number>(0);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) =>
         prevSlide === testimonials.length - 1 ? 0 : prevSlide + 1
@@ -97,7 +97,7 @@ const index = () => {
     
   ];
 
-  const [activeIndex, setActiveIndex] = React.useState<number>(-1);
+  const [activeIndex, setActiveIndex] = useState<number>(-1);
 
     const toggleAccordion = (index: number) => {
       if (activeIndex === index) {
@@ -141,7 +141,7 @@ const index = () => {
           </div>
         </div>
       </section>
-      <main>
+      {/* <main>
         <div className={styles.challenges}>
           <div className={styles.innerbox}>
             <div className={styles.headertext}>
@@ -155,6 +155,17 @@ const index = () => {
                 </div>
             </div>
           </div>
+        </div>
+      </main> */}
+      <main>
+        <div className='row'>
+          <div className={`${styles.challenges} col-12`}>
+            <div className={`${styles.innerbox}`}>
+              <h3 className={styles.innerboxheader}>Overcome Selling Challenges, Unleash Your Potential.</h3>
+              <p className={styles.innerboxtexts}>Are you struggling to reach a wider customer base and boost your sales? Do you find it challenging to navigate the complex world of e-commerce? We understand your pain points and are here to help.</p>
+            </div>
+          </div>
+
         </div>
       </main>
       <main>
@@ -232,23 +243,7 @@ const index = () => {
           <div className={` ${styles.fiveheader} mb-5`}>
           <h3 className={styles.innerecommerce}>Hear from Our Successful Sellers</h3>
           </div>
-          {/* TESTIMONIAL SLIDER */}
-          {/* <div className={styles.container}>
-      {testimonials.map((testimonial) => (
-        <div key={testimonial.id} className={styles.slide}>
-          <div>
-          <p className={styles.text}>{testimonial.text}</p>
-          <div className={styles.content}>
-          <img className={styles.image} src={testimonial.image} alt="Testimonial" />
-            <p className={styles.name}>{testimonial.name}</p>
-          </div>
-          </div>
-          
-        </div>
-      ))}
-    </div> */}
-     {/* <div className={styles.container}>
-      <div className={styles.slider}> */}
+        
        <div className={styles.container}>
       <div
         className={styles.slider}

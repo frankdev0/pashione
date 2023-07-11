@@ -231,38 +231,33 @@ line-height: 69.84px;
 
   .challenges{
     width: 100%;
-    height: 340px;
+    height: auto;
     background-color: #991D0E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3rem;
   }
 
   .innerbox{
-    display: flex;
     margin: auto;
     text-align: center;
     align-items: center;
     background-color: #FFF9F7;
-    height: 100px;
-    width: 80%;
+    height: auto;
+    width: 70%;
     border-radius: 40px;
-    padding: 110px 100px;
- 
+    padding: 3rem;
   }
 
+  @media (max-width: 948px) {
+    .innerbox{
+width: 100%;
+    }
+  }
   .innerboxheader{
     width: 100%;
     font-weight: 700;
     font-size: 30px;
     line-height: 52.38px;
     color: #991D0E;
-  }
-
-  .headerwidth {
-    width: 1009px;
-    height: 70px;
-    margin: auto;
   }
 
   .innerboxtexts{

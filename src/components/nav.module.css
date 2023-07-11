@@ -43,22 +43,22 @@
   }
 
 .loginbutton{
-    font-weight: 600;
+    font-weight: 500;
     /* font-family: poppins; */
     color: #991D0E;
     background-color: #ffffff;
     border-radius: 12px;
     border: 1px solid #991D0E;
-    Padding: 16px 48px 16px 48px;
+    Padding: 16px 35px 16px 35px;
     width: 180px;
 }
 .getstartedbutton{
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff;
     background-color: #991D0E;
     border-radius: 12px;
     border: 1px solid #991D0E;
-    Padding: 16px 48px 16px 48px;
+    Padding: 16px 35px 16px 35px;
 }
 
 .navbuttons{
@@ -68,15 +68,12 @@
 
 .herobuttons {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 1rem;
     width: 455px;
     height: 56px;
-    padding-right: 3rem;
-    text-align: center;
-    margin: auto;
+    padding-left: 70px;
   }
  
   
@@ -113,14 +110,13 @@ line-height: 69.84px;
 
 
 .sidetext {
-    max-width: 498px;
+    max-width: 550px;
     height: 140px;
-    margin: auto;
-    text-align: center;
+    padding-left: 70px;
   }
   
   .semitext {
-    font-size: 40px;
+    font-size: 48px;
     line-height: 1.2;
   }
   
@@ -132,6 +128,8 @@ line-height: 69.84px;
   @media (max-width: 768px) {
     .sidetext {
       max-width: 90%;
+      text-align: center;
+      height: 110px;
     }
   
     .primarytext {
@@ -149,8 +147,10 @@ line-height: 69.84px;
   
   @media (max-width: 576px) {
     .sidetext {
-      max-width: 90%;
-      font-size: 26px;
+      max-width: 80%;
+      font-size: 28px;
+      height: 110px;
+      text-align: center;
     }
   
     .primarytext {
@@ -158,7 +158,7 @@ line-height: 69.84px;
     }
   
     .semitext {
-      font-size: 22px;
+      font-size: 28px;
     }
   
     .secondary {
@@ -173,8 +173,7 @@ line-height: 69.84px;
     width: 455px;
     height: 72px;
     line-height: 36px;
-    margin: auto;
-    padding-left: 1rem;
+    padding-left: 70px;
     margin-bottom: 1rem;
   }
   
@@ -183,7 +182,7 @@ line-height: 69.84px;
        margin: auto; 
       width: 100%;
       max-width: 400px;
-      font-size: 20px;
+      font-size: 26px;
       padding-left: 0rem;
       margin: auto;
       text-align: center;
@@ -250,6 +249,10 @@ line-height: 69.84px;
   @media (max-width: 948px) {
     .innerbox{
 width: 100%;
+padding: 1rem;
+    }
+    .challenges{
+      padding: 2rem;
     }
   }
   .innerboxheader{
@@ -283,15 +286,43 @@ width: 100%;
   .thirdsection{
     /* display: flex;
     justify-content: space-between; */
-    align-items: center;
+    align-items: center ;
     /* padding: 0 70px; */
-    margin-top: 143px;
+    margin-top: 2rem;
+  }
+  @media (max-width: 948px) {
+    .thirdsection{
+      margin-top: 143px;
+    }
   }
 
   .ecommercetexts{
     height: 324px;
     width: 90%;
     padding: 0px 0px 0px 50px;
+  }
+
+  .innerecommerce{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52.38px;
+    color: #991D0E;
+    margin: auto;
+    width: 100%;
+  }
+  .choosepashione{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52.38px;
+    color: #991D0E;
+    margin: auto;
+    width: 100%;
   }
 
   @media (max-width: 948px) {
@@ -308,16 +339,6 @@ width: 100%;
     }
   }
 
- 
-
-  .innerecommerce{
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 52.38px;
-    color: #991D0E;
-    margin: auto;
-    width: 100%;
-  }
 
   .thirdparagraph{
    display: flex;
@@ -326,7 +347,7 @@ width: 100%;
 
   .sectionfour{
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 4rem;
     padding: 0 2rem;
   }
 
@@ -364,8 +385,12 @@ width: 100%;
 
   @media (max-width: 948px) {
     .comparism{
-        margin-top: 4rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    
     }
+    
   }
 
   .item{
@@ -398,7 +423,7 @@ width: 100%;
     height: 81px;
     margin: auto;
     text-align: center;
-    margin-top: 5rem;
+    margin: 1rem 0;
   }
 
   .sellerimg{
@@ -410,13 +435,12 @@ width: 100%;
 
   .seller{
     border-radius: 40px;
-    width: 1304px;
-    height: 834px;
     object-fit: contain;
   }
 
   @media (max-width: 767.98px) {
     .seller{
+      width: 100%;
         display: flex;
         align-items: center;
       height: 100%;
@@ -479,6 +503,12 @@ width: 100%;
     padding: 4rem;
   }
 
+  @media (max-width: 767.98px) {
+    .footer{
+      padding: 0;
+    }
+  }
+
   .reserved{
     display: flex;
     align-self: flex-end;
@@ -523,17 +553,21 @@ width: 100%;
   }
 
   @media (max-width: 768px) {
-    /* .container {
-      padding: 0px 1rem;
-    } */
+    .container {
+      height: 300px;
+    width: 100%;
+    }
   
     .slide {
       width: 100%; /* Adjusted to be full width on smaller screens */
+      height: 270px;
       margin-right: 0; /* Removed margin-right to remove space between slides on smaller screens */
     }
   }
 
   .testimonialbtn{
+    position: relative;
+    top: -34;
     display: flex;
     justify-content: flex-end;
     padding-right: 3rem;
@@ -603,9 +637,17 @@ width: 100%;
 .faqcontainer {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2rem; /* Add desired margin between each FAQ item */
   margin-bottom: 4rem;
+ 
+}
+@media (max-width: 968px) {
+  .faqcontainer {
+    padding: 0 20px;
+    margin-top: 3rem;
+  }
 }
 
 .faq {
@@ -695,4 +737,10 @@ width: 100%;
   font-weight: 400;
   color: #FFFFFF;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .bannertexts{
+    padding:0rem 2.5rem;
+  }
 }

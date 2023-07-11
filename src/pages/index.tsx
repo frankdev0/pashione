@@ -132,7 +132,7 @@ const Home = () => {
             <div><button className={styles.getstartedbutton}>Get Started</button></div>
           <div><button className={styles.loginbutton}>Login</button></div>
           
-        </div>
+            </div>
             </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ const Home = () => {
       <main>
         <div className={`row ${styles.sectionfour}`}>
           <div className={`${styles.fourheader} my-md-4 `}>
-          <h3 className={styles.innerecommerce}>Why Choose Pashione for Your Business?</h3>
+          <h3 className={styles.choosepashione}>Why Choose Pashione for Your Business?</h3>
           </div>
           
           <div className='col-12 my-md-5'>
@@ -226,7 +226,7 @@ const Home = () => {
         <div>
           <div className={`${styles.fiveheader} row mx-auto`}>
             <div className='col-12 mx-auto'>
-            <h3 className={styles.innerecommerce}>Trusted by Successful Sellers.</h3>
+            <h3 className={styles.choosepashione}>Trusted by Successful Sellers.</h3>
             <div className='mx-auto d-flex justify-content-center'>
             <p className={styles.description}>Join a community of thriving sellers who have achieved remarkable growth and success on our platform. Benefit from our trusted reputation and industry expertise.</p>
             </div>
@@ -240,8 +240,8 @@ const Home = () => {
       </main>
       <main>
         <div>
-          <div className={` ${styles.fiveheader} mb-5`}>
-          <h3 className={styles.innerecommerce}>Hear from Our Successful Sellers</h3>
+          <div className={` ${styles.fiveheaer} mt-5 mb-3`}>
+          <h3 className={styles.choosepashione}>Hear from Our Successful Sellers</h3>
           </div>
         
        <div className={styles.container}>
@@ -288,9 +288,9 @@ const Home = () => {
       </main>
       {/* FREQUENTLY ASKED QUESTIONS */}
       <main>
-      <div className={`${styles.fiveheader} row mb-4`}>
+      <div className={` row mb-4`}>
         <div>
-        <h3 className={`${styles.innerecommerce} col-12`}>Frequently Asked Questions</h3>
+        <h3 className={`${styles.choosepashione} col-12`}>Frequently Asked Questions</h3>
         </div>
           
           </div>
@@ -331,7 +331,7 @@ const Home = () => {
           </div>
         </div>
       </main> */}
-     <main className='px-3'>
+     <main className='px-4 mb-5'>
   <div className={`${styles.bannercontainer} row`}>
     <div className="col-md-6 col-12 d-flex align-items-center justify-content-center">
       <div className={`${styles.bannerr} text-center text-md-start px-4 py-4`}>
@@ -341,7 +341,7 @@ const Home = () => {
         <div className={styles.bannertexts}>
           <p>Join Pashione and take your business to new heights. Embrace the opportunities, tap into our resources, and become a part of our vibrant community of successful sellers.</p>
         </div>
-        <button className={`${styles.bannerbutton} btn btn-primary btn-lg mt-1`}>Get Started</button>
+        <button className={`${styles.bannerbutton}  btn-lg mt-1`}>Get Started</button>
       </div>
     </div>
     <div className="col-md-6 col-12 d-flex align-items-center justify-content-center">

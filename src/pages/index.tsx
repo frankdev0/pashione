@@ -367,9 +367,7 @@ const Home = () => {
           <Image src='/youtube.png' width={20} height={20} alt='youtube logo'/> 
           <Image src='/linkedin.png' width={20} height={20} alt='linkedin logo'/> 
           </div>
-          <div className={styles.reserved}>
-            <p className={styles.copyright}>© 2023, Pashione All rights reserved</p>
-          </div>
+          
           </div>
           <div className={styles.submenus}>
             <div>
@@ -391,7 +389,11 @@ const Home = () => {
               <p className={styles.submenutext}>Payments</p>
             </div>
           </div>
+          
         </div>
+        <div className={styles.reserved}>
+            <p className={styles.copyright}>© 2023, Pashione All rights reserved</p>
+          </div>
       </div>
       
     </div>

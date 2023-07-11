@@ -500,18 +500,21 @@ padding: 1rem;
   .footer{
     display: flex;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 1rem 4rem;
   }
 
   @media (max-width: 767.98px) {
     .footer{
-      padding: 0;
+      padding: 1rem 3rem;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   .reserved{
     display: flex;
     align-self: flex-end;
+    padding-left: 4rem;
   }
 
   
@@ -567,7 +570,7 @@ padding: 1rem;
 
   .testimonialbtn{
     position: relative;
-    top: -34;
+    top: -54;
     display: flex;
     justify-content: flex-end;
     padding-right: 3rem;
